@@ -1,0 +1,168 @@
+EESchema Schematic File Version 4
+LIBS:pwm-esc-littlebee-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L custom-symbols:ESC-LittleBee U2
+U 1 1 624497E6
+P 6450 3850
+F 0 "U2" V 6025 4350 50  0000 C CNN
+F 1 "ESC-LittleBee" V 6116 4350 50  0000 C CNN
+F 2 "custom-footprints:ECS_LittleBee-20A" H 6450 3850 50  0001 C CNN
+F 3 "" H 6450 3850 50  0001 C CNN
+	1    6450 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 624498B3
+P 6150 3850
+F 0 "J1" H 6044 3525 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 6044 3616 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S03B-XH-A_1x03_P2.50mm_Horizontal" H 6150 3850 50  0001 C CNN
+F 3 "~" H 6150 3850 50  0001 C CNN
+	1    6150 3850
+	-1   0    0    1   
+$EndComp
+NoConn ~ 4450 4150
+NoConn ~ 5000 4150
+$Comp
+L power:GND #PWR01
+U 1 1 62449A3F
+P 4200 3650
+F 0 "#PWR01" H 4200 3400 50  0001 C CNN
+F 1 "GND" H 4205 3477 50  0000 C CNN
+F 2 "" H 4200 3650 50  0001 C CNN
+F 3 "" H 4200 3650 50  0001 C CNN
+	1    4200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 62449A6A
+P 4200 4250
+F 0 "#PWR02" H 4200 4000 50  0001 C CNN
+F 1 "GND" H 4205 4077 50  0000 C CNN
+F 2 "" H 4200 4250 50  0001 C CNN
+F 3 "" H 4200 4250 50  0001 C CNN
+	1    4200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 62449A95
+P 7750 4050
+F 0 "#PWR04" H 7750 3800 50  0001 C CNN
+F 1 "GND" H 7755 3877 50  0000 C CNN
+F 2 "" H 7750 4050 50  0001 C CNN
+F 3 "" H 7750 4050 50  0001 C CNN
+	1    7750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 62449AC0
+P 7750 3750
+F 0 "#PWR03" H 7750 3500 50  0001 C CNN
+F 1 "GND" H 7755 3577 50  0000 C CNN
+F 2 "" H 7750 3750 50  0001 C CNN
+F 3 "" H 7750 3750 50  0001 C CNN
+	1    7750 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 5200 3650 2    50   Output ~ 0
+12V
+Text GLabel 7450 3650 2    50   Input ~ 0
+12V
+Text GLabel 7450 3950 2    50   Input ~ 0
+PPM
+Text GLabel 5200 4250 2    50   Output ~ 0
+PPM
+Wire Wire Line
+	7300 3750 7750 3750
+Wire Wire Line
+	7300 3950 7450 3950
+Wire Wire Line
+	7300 4050 7750 4050
+Wire Wire Line
+	7300 3650 7450 3650
+Wire Wire Line
+	6600 3750 6600 3700
+Wire Wire Line
+	6600 3950 6600 4000
+Wire Wire Line
+	4200 3650 4300 3650
+Wire Wire Line
+	5000 4250 5200 4250
+Wire Wire Line
+	5000 3650 5200 3650
+Wire Wire Line
+	4200 4250 4450 4250
+$Comp
+L custom-symbols:4010-fan-ESC U1
+U 1 1 623EDB8D
+P 4600 4000
+F 0 "U1" V 4025 4125 50  0000 C CNN
+F 1 "4010-fan-ESC" V 4116 4125 50  0000 C CNN
+F 2 "custom-footprints:4010-fan-ESC" H 4600 4000 50  0001 C CNN
+F 3 "" H 4600 4000 50  0001 C CNN
+	1    4600 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 4050 4450 3950
+Connection ~ 4450 3650
+Connection ~ 4450 3750
+Wire Wire Line
+	4450 3750 4450 3650
+Connection ~ 4450 3850
+Wire Wire Line
+	4450 3850 4450 3750
+Connection ~ 4450 3950
+Wire Wire Line
+	4450 3950 4450 3850
+Wire Wire Line
+	5000 3650 5000 3750
+Connection ~ 5000 3650
+Connection ~ 5000 3750
+Wire Wire Line
+	5000 3750 5000 3850
+Connection ~ 5000 3850
+Wire Wire Line
+	5000 3850 5000 3950
+Connection ~ 5000 3950
+Wire Wire Line
+	5000 3950 5000 4050
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 623EE07D
+P 4300 3650
+F 0 "#FLG0101" H 4300 3725 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 3824 50  0000 C CNN
+F 2 "" H 4300 3650 50  0001 C CNN
+F 3 "~" H 4300 3650 50  0001 C CNN
+	1    4300 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 3650
+Wire Wire Line
+	4300 3650 4450 3650
+Wire Wire Line
+	6350 3750 6600 3750
+Wire Wire Line
+	6350 3850 6600 3850
+Wire Wire Line
+	6600 3950 6350 3950
+$EndSCHEMATC
