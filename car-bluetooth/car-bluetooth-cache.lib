@@ -21,6 +21,26 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_Conn_01x02_Male
+#
+DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x02_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Conn_01x03_Female
 #
 DEF Connector_Conn_01x03_Female J 0 40 Y N 1 F N
@@ -41,35 +61,6 @@ P 2 1 1 6 -50 100 -20 100 N
 X Pin_1 1 -200 100 150 R 50 50 1 1 P
 X Pin_2 2 -200 0 150 R 50 50 1 1 P
 X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Conn_01x05_Female
-#
-DEF Connector_Conn_01x05_Female J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Conn_01x05_Female" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-A 0 -200 20 901 -901 1 1 6 N 0 -180 0 -220
-A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
-A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
-A 0 100 20 901 -901 1 1 6 N 0 120 0 80
-A 0 200 20 901 -901 1 1 6 N 0 220 0 180
-P 2 1 1 6 -50 -200 -20 -200 N
-P 2 1 1 6 -50 -100 -20 -100 N
-P 2 1 1 6 -50 0 -20 0 N
-P 2 1 1 6 -50 100 -20 100 N
-P 2 1 1 6 -50 200 -20 200 N
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_2 2 -200 100 150 R 50 50 1 1 P
-X Pin_3 3 -200 0 150 R 50 50 1 1 P
-X Pin_4 4 -200 -100 150 R 50 50 1 1 P
-X Pin_5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -255,22 +246,6 @@ X KEY 6 250 0 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# custom-symbols_buck-converter-3A
-#
-DEF custom-symbols_buck-converter-3A U 0 40 Y Y 1 F N
-F0 "U" 0 550 50 H V C CNN
-F1 "custom-symbols_buck-converter-3A" -50 750 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -200 100 200 700 0 1 0 N
-X EN 1 -150 0 100 U 50 50 1 1 P
-X VIN 2 -50 0 100 U 50 50 1 1 P
-X GND 3 50 0 100 U 50 50 1 1 P
-X VOUT 4 150 0 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # dk_Optoisolators-Transistor-Photovoltaic-Output_LTV-356T
 #
 DEF dk_Optoisolators-Transistor-Photovoltaic-Output_LTV-356T U 0 40 Y Y 1 F N
@@ -301,6 +276,30 @@ X ~ 1 -300 100 150 R 50 50 1 1 P
 X ~ 2 -300 -100 150 R 50 50 1 1 P
 X ~ 3 300 -100 150 L 50 50 1 1 P
 X ~ 4 300 100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_PMIC-Voltage-Regulators-Linear_L7805CV
+#
+DEF dk_PMIC-Voltage-Regulators-Linear_L7805CV U 0 20 Y Y 1 F N
+F0 "U" 0 150 60 H V C CNN
+F1 "dk_PMIC-Voltage-Regulators-Linear_L7805CV" 0 250 60 H V C CNN
+F2 "digikey-footprints:TO-220-3" 200 200 60 H I L CNN
+F3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" 200 300 60 H I L CNN
+F4 "497-1443-5-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "L7805CV" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
+F8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/stmicroelectronics/L7805CV/497-1443-5-ND/585964" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC REG LINEAR 5V 1.5A TO220AB" 200 1000 60 H I L CNN "Description"
+F11 "STMicroelectronics" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 100 200 -200 1 1 0 f
+X IN 1 -300 0 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X OUT 3 300 0 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #

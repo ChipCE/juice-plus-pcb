@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name molex_1x4_smd)(type Legacy)(uri ${KIPRJMOD}/lib/molex_1x4_smd.lib)(options "")(descr ""))
+)
