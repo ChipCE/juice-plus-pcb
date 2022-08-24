@@ -1,0 +1,350 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 6300D48F
+P 1800 4000
+F 0 "J1" V 1900 4200 50  0000 C CNN
+F 1 "INPUT" V 1900 3950 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 1692 3767 50  0001 C CNN
+F 3 "~" H 1800 4000 50  0001 C CNN
+	1    1800 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 6300DAE7
+P 2850 3950
+F 0 "J2" V 2850 4250 50  0000 L CNN
+F 1 "OUTPUT1" V 2878 3885 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 2878 3839 50  0001 L CNN
+F 3 "~" H 2850 3950 50  0001 C CNN
+	1    2850 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 6300E2DD
+P 3750 3950
+F 0 "J3" V 3750 4250 50  0000 L CNN
+F 1 "OUTPUT2" V 3778 3885 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 3750 3950 50  0001 C CNN
+F 3 "~" H 3750 3950 50  0001 C CNN
+	1    3750 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 6302E0B3
+P 1150 3000
+F 0 "J5" H 1178 3026 50  0000 L CNN
+F 1 "Mounting hole" H 1178 2935 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1150 3000 50  0001 C CNN
+F 3 "~" H 1150 3000 50  0001 C CNN
+	1    1150 3000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 950  3000
+$Comp
+L Connector:Conn_01x03_Female J4
+U 1 1 6300E538
+P 4450 3950
+F 0 "J4" V 4450 4250 50  0000 L CNN
+F 1 "OUTPUT3" V 4478 3885 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal" H 4450 3950 50  0001 C CNN
+F 3 "~" H 4450 3950 50  0001 C CNN
+	1    4450 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 63055597
+P 1150 3250
+F 0 "J6" H 1178 3276 50  0000 L CNN
+F 1 "Mounting hole" H 1178 3185 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1150 3250 50  0001 C CNN
+F 3 "~" H 1150 3250 50  0001 C CNN
+	1    1150 3250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 950  3250
+$Comp
+L Connector:Conn_01x02_Female J8
+U 1 1 63056171
+P 3050 4950
+F 0 "J8" V 2896 4998 50  0000 L CNN
+F 1 "Jumper" V 2987 4998 50  0000 L CNN
+F 2 "Custom_symbols:jumper-wire" H 3050 4950 50  0001 C CNN
+F 3 "~" H 3050 4950 50  0001 C CNN
+	1    3050 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 630640E3
+P 1800 4450
+F 0 "F1" H 1860 4496 50  0000 L CNN
+F 1 "Fuse" H 1860 4405 50  0000 L CNN
+F 2 "Custom_symbols:fuse-smd-thruhole" V 1730 4450 50  0001 C CNN
+F 3 "~" H 1800 4450 50  0001 C CNN
+	1    1800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F2
+U 1 1 63064E2B
+P 1900 4450
+F 0 "F2" H 1960 4496 50  0000 L CNN
+F 1 "Fuse" H 1960 4405 50  0000 L CNN
+F 2 "Custom_symbols:fuse-smd-thruhole" V 1830 4450 50  0001 C CNN
+F 3 "~" H 1900 4450 50  0001 C CNN
+	1    1900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4200 1800 4300
+Wire Wire Line
+	1900 4200 1900 4300
+$Comp
+L Device:Fuse F3
+U 1 1 63067595
+P 2850 4450
+F 0 "F3" H 2910 4496 50  0000 L CNN
+F 1 "Fuse" H 2910 4405 50  0000 L CNN
+F 2 "Custom_symbols:fuse-smd-thruhole" V 2780 4450 50  0001 C CNN
+F 3 "~" H 2850 4450 50  0001 C CNN
+	1    2850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F4
+U 1 1 63067A9F
+P 2950 4450
+F 0 "F4" H 3010 4496 50  0000 L CNN
+F 1 "Fuse" H 3010 4405 50  0000 L CNN
+F 2 "Custom_symbols:fuse-smd-thruhole" V 2880 4450 50  0001 C CNN
+F 3 "~" H 2950 4450 50  0001 C CNN
+	1    2950 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F5
+U 1 1 63067D80
+P 3750 4450
+F 0 "F5" H 3810 4496 50  0000 L CNN
+F 1 "Fuse" H 3810 4405 50  0000 L CNN
+F 2 "Custom_symbols:fuse-smd-thruhole" V 3680 4450 50  0001 C CNN
+F 3 "~" H 3750 4450 50  0001 C CNN
+	1    3750 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F6
+U 1 1 630682F8
+P 3850 4450
+F 0 "F6" H 3910 4496 50  0000 L CNN
+F 1 "Fuse" H 3910 4405 50  0000 L CNN
+F 2 "Custom_symbols:fuse-smd-thruhole" V 3780 4450 50  0001 C CNN
+F 3 "~" H 3850 4450 50  0001 C CNN
+	1    3850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F7
+U 1 1 63068D0B
+P 4450 4450
+F 0 "F7" H 4510 4496 50  0000 L CNN
+F 1 "Fuse" H 4510 4405 50  0000 L CNN
+F 2 "Custom_symbols:fuse-smd-thruhole" V 4380 4450 50  0001 C CNN
+F 3 "~" H 4450 4450 50  0001 C CNN
+	1    4450 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F8
+U 1 1 630692C6
+P 4550 4450
+F 0 "F8" H 4610 4496 50  0000 L CNN
+F 1 "Fuse" H 4610 4405 50  0000 L CNN
+F 2 "Custom_symbols:fuse-smd-thruhole" V 4480 4450 50  0001 C CNN
+F 3 "~" H 4550 4450 50  0001 C CNN
+	1    4550 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J7
+U 1 1 6306B22B
+P 2950 5300
+F 0 "J7" V 2796 5348 50  0000 L CNN
+F 1 "Jumper" V 2887 5348 50  0000 L CNN
+F 2 "Custom_symbols:jumper-wire" H 2950 5300 50  0001 C CNN
+F 3 "~" H 2950 5300 50  0001 C CNN
+	1    2950 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 4600 1900 4750
+Wire Wire Line
+	2850 4600 2850 5100
+Wire Wire Line
+	2850 4150 2850 4300
+Wire Wire Line
+	2950 4300 2950 4150
+Wire Wire Line
+	3750 4300 3750 4150
+Wire Wire Line
+	3850 4300 3850 4150
+Wire Wire Line
+	4450 4300 4450 4150
+Wire Wire Line
+	4550 4300 4550 4150
+$Comp
+L Connector:Conn_01x02_Female J10
+U 1 1 6306EDE1
+P 3950 4950
+F 0 "J10" V 3796 4998 50  0000 L CNN
+F 1 "Jumper" V 3887 4998 50  0000 L CNN
+F 2 "Custom_symbols:jumper-wire" H 3950 4950 50  0001 C CNN
+F 3 "~" H 3950 4950 50  0001 C CNN
+	1    3950 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J9
+U 1 1 6306FB15
+P 3850 5300
+F 0 "J9" V 3696 5348 50  0000 L CNN
+F 1 "Jumper" V 3787 5348 50  0000 L CNN
+F 2 "Custom_symbols:jumper-wire" H 3850 5300 50  0001 C CNN
+F 3 "~" H 3850 5300 50  0001 C CNN
+	1    3850 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 4600 3850 4750
+Wire Wire Line
+	3750 4600 3750 5100
+Text GLabel 1700 4350 3    50   Output ~ 0
+GND
+Text GLabel 2750 4350 3    50   Input ~ 0
+GND
+Text GLabel 3650 4350 3    50   Input ~ 0
+GND
+Text GLabel 4350 4350 3    50   Input ~ 0
+GND
+Wire Wire Line
+	1700 4350 1700 4200
+Wire Wire Line
+	2750 4350 2750 4150
+Wire Wire Line
+	3650 4350 3650 4150
+Wire Wire Line
+	4350 4350 4350 4150
+$Comp
+L Connector:Conn_01x02_Female J12
+U 1 1 6308092E
+P 4650 4950
+F 0 "J12" V 4496 4998 50  0000 L CNN
+F 1 "Jumper" V 4587 4998 50  0000 L CNN
+F 2 "Custom_symbols:jumper-wire" H 4650 4950 50  0001 C CNN
+F 3 "~" H 4650 4950 50  0001 C CNN
+	1    4650 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J11
+U 1 1 63080FFD
+P 4550 5300
+F 0 "J11" V 4396 5348 50  0000 L CNN
+F 1 "Jumper" V 4487 5348 50  0000 L CNN
+F 2 "Custom_symbols:jumper-wire" H 4550 5300 50  0001 C CNN
+F 3 "~" H 4550 5300 50  0001 C CNN
+	1    4550 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 4600 4550 4750
+Wire Wire Line
+	4450 4600 4450 5100
+Wire Wire Line
+	2950 4600 2950 4750
+$Comp
+L Connector:Conn_01x02_Female J14
+U 1 1 63086B09
+P 2000 4950
+F 0 "J14" V 1846 4998 50  0000 L CNN
+F 1 "Jumper" V 1937 4998 50  0000 L CNN
+F 2 "Custom_symbols:jumper-wire" H 2000 4950 50  0001 C CNN
+F 3 "~" H 2000 4950 50  0001 C CNN
+	1    2000 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J13
+U 1 1 63087262
+P 1900 5300
+F 0 "J13" V 1746 5348 50  0000 L CNN
+F 1 "Jumper" V 1837 5348 50  0000 L CNN
+F 2 "Custom_symbols:jumper-wire" H 1900 5300 50  0001 C CNN
+F 3 "~" H 1900 5300 50  0001 C CNN
+	1    1900 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 5100 1800 4600
+Wire Wire Line
+	1800 5100 1900 5100
+Connection ~ 1800 5100
+Wire Wire Line
+	1900 4750 2000 4750
+Connection ~ 1900 4750
+Wire Wire Line
+	2850 5100 2950 5100
+Connection ~ 2850 5100
+Wire Wire Line
+	3050 4750 2950 4750
+Connection ~ 2950 4750
+Wire Wire Line
+	3950 4750 3850 4750
+Connection ~ 3850 4750
+Wire Wire Line
+	3850 5100 3750 5100
+Connection ~ 3750 5100
+Wire Wire Line
+	4650 4750 4550 4750
+Connection ~ 4550 4750
+Wire Wire Line
+	4550 5100 4450 5100
+Connection ~ 4450 5100
+Wire Wire Line
+	2000 4750 2950 4750
+Connection ~ 2000 4750
+Wire Wire Line
+	1900 5100 2850 5100
+Connection ~ 1900 5100
+Wire Wire Line
+	3050 4750 3850 4750
+Connection ~ 3050 4750
+Wire Wire Line
+	2950 5100 3750 5100
+Connection ~ 2950 5100
+Wire Wire Line
+	3950 4750 4550 4750
+Connection ~ 3950 4750
+Wire Wire Line
+	3850 5100 4450 5100
+Connection ~ 3850 5100
+$EndSCHEMATC
