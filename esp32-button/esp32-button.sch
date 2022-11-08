@@ -299,4 +299,42 @@ Wire Wire Line
 	4150 1800 4450 1800
 Wire Wire Line
 	4450 1800 4450 2050
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 6369FDD5
+P 6900 2000
+F 0 "J1" H 6792 1675 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 6792 1766 50  0000 C CNN
+F 2 "custom-footprints:solder-pad-2p" H 6900 2000 50  0001 C CNN
+F 3 "~" H 6900 2000 50  0001 C CNN
+	1    6900 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 636A0A9C
+P 6900 2300
+F 0 "J2" H 6792 1975 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 6792 2066 50  0000 C CNN
+F 2 "custom-footprints:solder-pad-2p" H 6900 2300 50  0001 C CNN
+F 3 "~" H 6900 2300 50  0001 C CNN
+	1    6900 2300
+	-1   0    0    1   
+$EndComp
+Text GLabel 7350 1900 2    50   Input ~ 0
+5V
+Text GLabel 7350 2000 2    50   Input ~ 0
+GND
+Text GLabel 7350 2200 2    50   Input ~ 0
+5V
+Text GLabel 7350 2300 2    50   Input ~ 0
+GND
+Wire Wire Line
+	7100 1900 7350 1900
+Wire Wire Line
+	7100 2000 7350 2000
+Wire Wire Line
+	7100 2200 7350 2200
+Wire Wire Line
+	7100 2300 7350 2300
 $EndSCHEMATC
