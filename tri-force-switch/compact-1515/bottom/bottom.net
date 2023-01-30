@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/chip/Data/Code/juice-plus-pcb/tri-force-switch/bottom/bottom.sch)
-    (date "Thu 26 Jan 2023 04:51:04 PM JST")
+    (source /home/chip/Data/Code/juice-plus-pcb/tri-force-switch/compact-1515/bottom/bottom.sch)
+    (date "Mon 30 Jan 2023 08:17:53 AM JST")
     (tool "Eeschema 5.1.9+dfsg1-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -52,7 +52,7 @@
       (tstamp 63D238E6))
     (comp (ref J6)
       (value RING_HOLE)
-      (footprint custom-footprints:m4-d14-nut-outer-ring-)
+      (footprint custom-footprints:m3-d12-mounter-hole)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x01_Female) (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))

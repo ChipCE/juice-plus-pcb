@@ -1,4 +1,4 @@
-19040056971697818
+19048431399203818
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83167,6 +83167,20 @@ connector-12p-offset
 12
 12
 custom-footprints
+dragon-hotend-cutout
+
+
+0
+5
+1
+custom-footprints
+dragon-hotend-mount
+
+
+0
+5
+1
+custom-footprints
 juice-plus_logo_3k
 
 
@@ -83174,7 +83188,28 @@ juice-plus_logo_3k
 0
 0
 custom-footprints
+m3-d7-mounting-hole
+
+
+0
+1
+1
+custom-footprints
 m3-d8-mounting-hole
+
+
+0
+1
+1
+custom-footprints
+m3-d12-mounter-hole
+
+
+0
+1
+1
+custom-footprints
+m3-d12-nut-mounter-hole
 
 
 0

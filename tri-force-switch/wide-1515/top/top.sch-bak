@@ -66,10 +66,10 @@ Wire Wire Line
 	1550 2150 1550 1900
 Connection ~ 1550 1700
 $Comp
-L Connector:Conn_01x01_Female J?
+L Connector:Conn_01x01_Female J5
 U 1 1 63D321EE
 P 1750 1900
-F 0 "J?" H 1778 1926 50  0000 L CNN
+F 0 "J5" H 1778 1926 50  0000 L CNN
 F 1 "BOLT_HOLE" H 1778 1835 50  0000 L CNN
 F 2 "custom-footprints:m3-d8-mounting-hole" H 1750 1900 50  0001 C CNN
 F 3 "~" H 1750 1900 50  0001 C CNN

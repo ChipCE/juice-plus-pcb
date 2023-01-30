@@ -74,7 +74,7 @@ U 1 1 63D23BA4
 P 3350 2300
 F 0 "J6" H 3378 2326 50  0000 L CNN
 F 1 "RING_HOLE" H 3378 2235 50  0000 L CNN
-F 2 "custom-footprints:m4-d14-nut-outer-ring-" H 3350 2300 50  0001 C CNN
+F 2 "custom-footprints:m3-d12-mounter-hole" H 3350 2300 50  0001 C CNN
 F 3 "~" H 3350 2300 50  0001 C CNN
 	1    3350 2300
 	1    0    0    -1  

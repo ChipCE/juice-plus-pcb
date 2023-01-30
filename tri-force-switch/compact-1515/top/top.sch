@@ -57,7 +57,7 @@ U 1 1 63D2F161
 P 1750 2150
 F 0 "J4" H 1778 2176 50  0000 L CNN
 F 1 "CENTER_BOLT" H 1778 2085 50  0000 L CNN
-F 2 "custom-footprints:m4-d14-nut-mounter-hole" H 1750 2150 50  0001 C CNN
+F 2 "custom-footprints:m3-d12-nut-mounter-hole" H 1750 2150 50  0001 C CNN
 F 3 "~" H 1750 2150 50  0001 C CNN
 	1    1750 2150
 	1    0    0    -1  

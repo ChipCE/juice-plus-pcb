@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/chip/Data/Code/juice-plus-pcb/tri-force-switch/wide-1515/top/top.sch)
-    (date "Fri 27 Jan 2023 09:12:06 AM JST")
+    (date "Mon 30 Jan 2023 08:12:38 AM JST")
     (tool "Eeschema 5.1.9+dfsg1-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -38,7 +38,7 @@
       (tstamp 63D2FD39))
     (comp (ref J4)
       (value CENTER_BOLT)
-      (footprint custom-footprints:m4-d14-nut-mounter-hole)
+      (footprint custom-footprints:m3-d12-nut-mounter-hole)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x01_Female) (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))

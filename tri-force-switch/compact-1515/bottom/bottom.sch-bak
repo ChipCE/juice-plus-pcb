@@ -19,7 +19,7 @@ U 1 1 63D21D6A
 P 1850 1400
 F 0 "J1" H 1742 1075 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 1742 1166 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 1850 1400 50  0001 C CNN
+F 2 "custom-footprints:solder-pin-th-2pin" H 1850 1400 50  0001 C CNN
 F 3 "~" H 1850 1400 50  0001 C CNN
 	1    1850 1400
 	-1   0    0    1   
@@ -30,7 +30,7 @@ U 1 1 63D22128
 P 1850 1900
 F 0 "J2" H 1742 1575 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 1742 1666 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 1850 1900 50  0001 C CNN
+F 2 "custom-footprints:solder-pin-th-2pin" H 1850 1900 50  0001 C CNN
 F 3 "~" H 1850 1900 50  0001 C CNN
 	1    1850 1900
 	-1   0    0    1   
