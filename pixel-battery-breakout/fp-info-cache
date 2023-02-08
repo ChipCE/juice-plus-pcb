@@ -1,4 +1,4 @@
-19048431399370818
+19050107223704818
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83054,6 +83054,13 @@ AE-XC9306-5V0
 0
 6
 6
+custom-footprints
+BUCK-ISOLATED-MCWI03
+
+
+0
+7
+7
 custom-footprints
 Bluetooth_KCX_BT0003
 

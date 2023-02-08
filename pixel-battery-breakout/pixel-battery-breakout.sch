@@ -62,7 +62,7 @@ L Device:Jumper_NO_Small JP1
 U 1 1 63E20AFB
 P 3950 2700
 F 0 "JP1" H 3950 2885 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 3950 2600 50  0000 C CNN
+F 1 "JP" H 3950 2600 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3950 2700 50  0001 C CNN
 F 3 "~" H 3950 2700 50  0001 C CNN
 	1    3950 2700
@@ -129,4 +129,32 @@ Wire Wire Line
 Connection ~ 4200 2000
 Wire Wire Line
 	4200 2000 4450 2000
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 63E2F8BB
+P 3800 3200
+F 0 "J6" H 3700 3300 50  0000 C CNN
+F 1 "TEST_POINT" H 4100 3200 50  0000 C CNN
+F 2 "custom-footprints:solder-pad" H 3800 3200 50  0001 C CNN
+F 3 "~" H 3800 3200 50  0001 C CNN
+	1    3800 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J7
+U 1 1 63E31956
+P 4100 3200
+F 0 "J7" H 4000 3300 50  0000 C CNN
+F 1 "TEST_POINT" H 4350 3200 50  0000 C CNN
+F 2 "custom-footprints:solder-pad" H 4100 3200 50  0001 C CNN
+F 3 "~" H 4100 3200 50  0001 C CNN
+	1    4100 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 2700 3800 3000
+Connection ~ 3800 2700
+Wire Wire Line
+	4100 3000 4100 2700
+Connection ~ 4100 2700
 $EndSCHEMATC
