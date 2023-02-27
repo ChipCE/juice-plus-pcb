@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name car-bluetooth-rescue)(type Legacy)(uri ${KIPRJMOD}/car-bluetooth-rescue.lib)(options "")(descr ""))
+  (lib (name car-bluetooth-lite-rescue)(type Legacy)(uri ${KIPRJMOD}/car-bluetooth-lite-rescue.lib)(options "")(descr ""))
+)
