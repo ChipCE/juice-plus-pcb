@@ -106,9 +106,9 @@ Wire Wire Line
 Wire Wire Line
 	2050 3250 2300 3250
 Wire Wire Line
-	2050 3350 2300 3350
+	2050 3350 2150 3350
 Wire Wire Line
-	2050 3450 2300 3450
+	2050 3450 2150 3450
 Text GLabel 4550 2300 2    50   Input ~ 0
 V+
 Text GLabel 4550 2500 2    50   Input ~ 0
@@ -199,4 +199,12 @@ Wire Wire Line
 Connection ~ 5300 3800
 Wire Wire Line
 	4700 4200 4900 4200
+Wire Wire Line
+	2150 3350 2150 3450
+Connection ~ 2150 3350
+Wire Wire Line
+	2150 3350 2300 3350
+Connection ~ 2150 3450
+Wire Wire Line
+	2150 3450 2300 3450
 $EndSCHEMATC

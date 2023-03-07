@@ -57,17 +57,6 @@ F 3 "~" H 1800 2200 50  0001 C CNN
 	1    1800 2200
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:Jumper_NO_Small JP1
-U 1 1 6404D458
-P 5050 3800
-F 0 "JP1" H 5050 3615 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 5050 3706 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5050 3800 50  0001 C CNN
-F 3 "~" H 5050 3800 50  0001 C CNN
-	1    5050 3800
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2000 2100 2350 2100
 Wire Wire Line
@@ -134,20 +123,7 @@ ID
 Text GLabel 4700 3500 0    50   Input ~ 0
 V-
 Wire Wire Line
-	4700 3500 4800 3500
-Wire Wire Line
 	5200 3500 5300 3500
-Wire Wire Line
-	4800 3500 4800 3800
-Wire Wire Line
-	4800 3800 4950 3800
-Connection ~ 4800 3500
-Wire Wire Line
-	4800 3500 4900 3500
-Wire Wire Line
-	5300 3500 5300 3800
-Wire Wire Line
-	5300 3800 5150 3800
 Connection ~ 5300 3500
 Wire Wire Line
 	5300 3500 5400 3500
@@ -195,9 +171,6 @@ V+
 Wire Wire Line
 	5200 4200 5300 4200
 Wire Wire Line
-	5300 4200 5300 3800
-Connection ~ 5300 3800
-Wire Wire Line
 	4700 4200 4900 4200
 Wire Wire Line
 	2150 3350 2150 3450
@@ -207,4 +180,8 @@ Wire Wire Line
 Connection ~ 2150 3450
 Wire Wire Line
 	2150 3450 2300 3450
+Wire Wire Line
+	5300 3500 5300 4200
+Wire Wire Line
+	4700 3500 4900 3500
 $EndSCHEMATC
