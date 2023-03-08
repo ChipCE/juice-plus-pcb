@@ -1,12 +1,12 @@
-G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.1.9+dfsg1-1+deb11u1*
-G04 #@! TF.CreationDate,2023-03-07T21:47:34+09:00*
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.1.9+dfsg1-1*
+G04 #@! TF.CreationDate,2023-03-08T16:13:55+09:00*
 G04 #@! TF.ProjectId,tablet-usb-adapter,7461626c-6574-42d7-9573-622d61646170,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Paste,Top*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 5.1.9+dfsg1-1+deb11u1) date 2023-03-07 21:47:34*
+G04 Created by KiCad (PCBNEW 5.1.9+dfsg1-1) date 2023-03-08 16:13:55*
 %MOMM*%
 %LPD*%
 G01*

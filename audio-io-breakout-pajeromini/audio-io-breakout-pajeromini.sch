@@ -77,9 +77,9 @@ NL
 Text GLabel 1150 1650 0    50   Input ~ 0
 RL
 Text GLabel 1150 950  0    50   Input ~ 0
-SG
+AG
 Text GLabel 1150 1450 0    50   Input ~ 0
-SG
+AG
 Text GLabel 1150 2000 0    50   Input ~ 0
 PWR-SW
 Text GLabel 1150 1900 0    50   Input ~ 0
@@ -221,7 +221,7 @@ Wire Wire Line
 	2150 3550 2350 3550
 Text GLabel 1100 2950 0    50   Input ~ 0
 SG
-Text GLabel 1100 3050 0    50   Input ~ 0
+Text GLabel 1100 3200 0    50   Input ~ 0
 GND
 $Comp
 L Device:Jumper JP6
@@ -236,10 +236,6 @@ F 3 "~" H 1600 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1100 2950 1300 2950
-Wire Wire Line
-	1900 3050 1900 2950
-Wire Wire Line
-	1100 3050 1900 3050
 Text GLabel 3900 4000 0    50   Input ~ 0
 MOTOR
 Text GLabel 3900 3800 0    50   Input ~ 0
@@ -266,4 +262,24 @@ F 3 "~" H 4100 3800 50  0001 C CNN
 	1    4100 3800
 	1    0    0    -1  
 $EndComp
+Text GLabel 2350 2950 2    50   Input ~ 0
+AG
+$Comp
+L Device:Jumper JP7
+U 1 1 64092183
+P 1600 3200
+F 0 "JP7" H 1600 3464 50  0000 C CNN
+F 1 "Jumper" H 1600 3373 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1600 3200 50  0001 C CNN
+F 3 "~" H 1600 3200 50  0001 C CNN
+	1    1600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 3200 1300 3200
+Wire Wire Line
+	1900 2950 1900 3200
+Wire Wire Line
+	1900 2950 2350 2950
+Connection ~ 1900 2950
 $EndSCHEMATC

@@ -94,10 +94,6 @@ Wire Wire Line
 	2050 3150 2300 3150
 Wire Wire Line
 	2050 3250 2300 3250
-Wire Wire Line
-	2050 3350 2150 3350
-Wire Wire Line
-	2050 3450 2150 3450
 Text GLabel 4550 2300 2    50   Input ~ 0
 V+
 Text GLabel 4550 2500 2    50   Input ~ 0
@@ -173,15 +169,30 @@ Wire Wire Line
 Wire Wire Line
 	4700 4200 4900 4200
 Wire Wire Line
-	2150 3350 2150 3450
-Connection ~ 2150 3350
-Wire Wire Line
-	2150 3350 2300 3350
-Connection ~ 2150 3450
-Wire Wire Line
-	2150 3450 2300 3450
-Wire Wire Line
 	5300 3500 5300 4200
 Wire Wire Line
 	4700 3500 4900 3500
+Wire Wire Line
+	2050 3350 2300 3350
+Wire Wire Line
+	2050 3450 2300 3450
+Text GLabel 4700 4650 0    50   Input ~ 0
+SG
+Text GLabel 5400 4650 2    50   Input ~ 0
+V-
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 640A78DE
+P 5050 4650
+F 0 "JP1" H 5050 4835 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 5050 4744 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5050 4650 50  0001 C CNN
+F 3 "~" H 5050 4650 50  0001 C CNN
+	1    5050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4650 4950 4650
+Wire Wire Line
+	5150 4650 5400 4650
 $EndSCHEMATC

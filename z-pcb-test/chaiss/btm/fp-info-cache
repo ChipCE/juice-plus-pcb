@@ -1,4 +1,4 @@
-19051785302773818
+19056820024209818
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83167,6 +83167,20 @@ capacitor-12p5-20mm
 2
 2
 custom-footprints
+chaiss-mid-dragon-mount
+
+
+0
+5
+1
+custom-footprints
+chaiss_m3_mounting_hole
+
+
+0
+1
+1
+custom-footprints
 chaiss_pcb_z_switch_template
 
 
@@ -83292,3 +83306,10 @@ solder-pin-th-2pin
 0
 2
 2
+custom-footprints
+tes
+
+
+0
+0
+0

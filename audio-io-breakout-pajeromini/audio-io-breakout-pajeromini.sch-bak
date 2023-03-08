@@ -77,9 +77,9 @@ NL
 Text GLabel 1150 1650 0    50   Input ~ 0
 RL
 Text GLabel 1150 950  0    50   Input ~ 0
-SG
+AG
 Text GLabel 1150 1450 0    50   Input ~ 0
-SG
+AG
 Text GLabel 1150 2000 0    50   Input ~ 0
 PWR-SW
 Text GLabel 1150 1900 0    50   Input ~ 0
@@ -240,17 +240,6 @@ Wire Wire Line
 	1900 3050 1900 2950
 Wire Wire Line
 	1100 3050 1900 3050
-$Comp
-L Connector:Conn_01x03_Female J3
-U 1 1 640924B8
-P 4050 3250
-F 0 "J3" H 4078 3276 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 4078 3185 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal" H 4050 3250 50  0001 C CNN
-F 3 "~" H 4050 3250 50  0001 C CNN
-	1    4050 3250
-	1    0    0    -1  
-$EndComp
 Text GLabel 3900 4000 0    50   Input ~ 0
 MOTOR
 Text GLabel 3900 3800 0    50   Input ~ 0
@@ -277,4 +266,20 @@ F 3 "~" H 4100 3800 50  0001 C CNN
 	1    4100 3800
 	1    0    0    -1  
 $EndComp
+Text GLabel 2800 2600 2    50   Input ~ 0
+AG
+$Comp
+L Device:Jumper JP7
+U 1 1 64092183
+P 2200 2600
+F 0 "JP7" H 2200 2864 50  0000 C CNN
+F 1 "Jumper" H 2200 2773 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2200 2600 50  0001 C CNN
+F 3 "~" H 2200 2600 50  0001 C CNN
+	1    2200 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 2600
+Wire Wire Line
+	2500 2600 2800 2600
 $EndSCHEMATC
