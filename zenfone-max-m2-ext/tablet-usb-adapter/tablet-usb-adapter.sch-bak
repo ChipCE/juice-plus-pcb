@@ -1,0 +1,322 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MiniUSB to USB-A adapter"
+Date "2023-06-22"
+Rev "Rev.2"
+Comp ""
+Comment1 "Connect ID-toGND on miniUSB connector side"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_A J3
+U 1 1 64049408
+P 1550 1600
+F 0 "J3" H 1607 2067 50  0000 C CNN
+F 1 "USB_A" H 1607 1976 50  0000 C CNN
+F 2 "Connector_USB:USB_A_CONNFLY_DS1095-WNR0" H 1700 1550 50  0001 C CNN
+F 3 " ~" H 1700 1550 50  0001 C CNN
+	1    1550 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 2750 2    50   Output ~ 0
+V+
+Text GLabel 1850 2850 2    50   Output ~ 0
+D-
+Text GLabel 1850 2950 2    50   Output ~ 0
+D+
+Text GLabel 1850 3050 2    50   Output ~ 0
+V-
+Text GLabel 2100 1400 2    50   Input ~ 0
+V+
+Text GLabel 2100 1600 2    50   Input ~ 0
+D+
+Text GLabel 2100 1700 2    50   Input ~ 0
+D-
+Text GLabel 1550 2150 3    50   Input ~ 0
+V-
+Wire Wire Line
+	1550 2000 1550 2050
+Wire Wire Line
+	1850 1400 2000 1400
+Wire Wire Line
+	1850 1600 2100 1600
+Wire Wire Line
+	1850 1700 2100 1700
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6405AF93
+P 2000 1400
+F 0 "#FLG0101" H 2000 1475 50  0001 C CNN
+F 1 "PWR_FLAG" H 2000 1573 50  0000 C CNN
+F 2 "" H 2000 1400 50  0001 C CNN
+F 3 "~" H 2000 1400 50  0001 C CNN
+	1    2000 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 1400
+Wire Wire Line
+	2000 1400 2100 1400
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6405B49D
+P 1550 2050
+F 0 "#FLG0102" H 1550 2125 50  0001 C CNN
+F 1 "PWR_FLAG" V 1550 2178 50  0000 L CNN
+F 2 "" H 1550 2050 50  0001 C CNN
+F 3 "~" H 1550 2050 50  0001 C CNN
+	1    1550 2050
+	0    1    1    0   
+$EndComp
+Connection ~ 1550 2050
+Wire Wire Line
+	1550 2050 1550 2150
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 64941F1B
+P 1400 2950
+F 0 "J1" H 1292 2525 50  0000 C CNN
+F 1 "MINI-USB" H 1292 2616 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1400 2950 50  0001 C CNN
+F 3 "~" H 1400 2950 50  0001 C CNN
+	1    1400 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 2750 1850 2750
+Wire Wire Line
+	1600 2850 1850 2850
+Wire Wire Line
+	1600 2950 1850 2950
+Wire Wire Line
+	1600 3050 1850 3050
+Wire Wire Line
+	1450 2000 1450 2050
+Wire Wire Line
+	1450 2050 1550 2050
+$Comp
+L Relay:TE_PCH-1xxx2M K1
+U 1 1 6494D10C
+P 7450 3050
+F 0 "K1" H 7780 3096 50  0000 L CNN
+F 1 "OMRON_G6L" H 7780 3005 50  0000 L CNN
+F 2 "custom-footprints:RELAY_OMRON_G6L" H 7800 3000 50  0001 L CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FPCH_series_relay_data_sheet_E%7F1215%7Fpdf%7FEnglish%7FENG_DS_PCH_series_relay_data_sheet_E_1215.pdf%7F9-1440003-0" H 7450 3050 50  0001 C CNN
+	1    7450 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2750 8550 2750
+Wire Wire Line
+	8550 3350 7650 3350
+Wire Wire Line
+	7250 2750 6700 2750
+Wire Wire Line
+	7250 3350 6700 3350
+$Comp
+L Device:Q_NJFET_GDS Q1
+U 1 1 64959188
+P 6600 3700
+F 0 "Q1" H 6790 3746 50  0000 L CNN
+F 1 "NCV8402" H 6790 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6800 3800 50  0001 C CNN
+F 3 "~" H 6600 3700 50  0001 C CNN
+	1    6600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3500 6700 3350
+Wire Wire Line
+	6700 4450 6700 3900
+$Comp
+L Device:R_US R2
+U 1 1 6495E7DB
+P 6250 4150
+F 0 "R2" H 6318 4196 50  0000 L CNN
+F 1 "10K" H 6318 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6290 4140 50  0001 C CNN
+F 3 "~" H 6250 4150 50  0001 C CNN
+	1    6250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3700 6250 3700
+Wire Wire Line
+	6250 3700 6250 4000
+Wire Wire Line
+	6250 4450 6250 4300
+$Comp
+L Device:R_US R1
+U 1 1 6495FC82
+P 5800 3700
+F 0 "R1" V 5595 3700 50  0000 C CNN
+F 1 "1K" V 5686 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5840 3690 50  0001 C CNN
+F 3 "~" H 5800 3700 50  0001 C CNN
+	1    5800 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 3700 6250 3700
+Connection ~ 6250 3700
+Wire Wire Line
+	6700 2550 6700 2750
+$Comp
+L Device:C C1
+U 1 1 64968B24
+P 6700 1550
+F 0 "C1" H 6815 1596 50  0000 L CNN
+F 1 "10u" H 6815 1505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6738 1400 50  0001 C CNN
+F 3 "~" H 6700 1550 50  0001 C CNN
+	1    6700 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1700 6700 1900
+Text GLabel 5450 1200 2    50   Input ~ 0
+VCC
+Text GLabel 5450 1300 2    50   Input ~ 0
+GND
+Text GLabel 5450 1500 2    50   Input ~ 0
+TABLET_SHIELD
+Text GLabel 5450 1400 2    50   Input ~ 0
+TABLET_GND
+Wire Wire Line
+	5450 1200 4850 1200
+Wire Wire Line
+	4850 1300 5450 1300
+Wire Wire Line
+	4850 1400 5450 1400
+Wire Wire Line
+	4850 1500 5450 1500
+Text GLabel 6700 1050 1    50   Input ~ 0
+VCC
+Text GLabel 4800 2600 1    50   Input ~ 0
+VCC
+Text GLabel 4800 4800 3    50   Input ~ 0
+GND
+Text GLabel 6700 1900 3    50   Input ~ 0
+GND
+Text GLabel 6250 4450 3    50   Input ~ 0
+GND
+Text GLabel 6700 4450 3    50   Input ~ 0
+GND
+Text GLabel 6700 2550 1    50   Input ~ 0
+VCC
+Text GLabel 8550 2750 2    50   Input ~ 0
+TABLET_GND
+Text GLabel 8550 3350 2    50   Input ~ 0
+TABLET_SHIELD
+Text GLabel 5450 1700 2    50   Input ~ 0
+VCC
+Text GLabel 5450 1600 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6700 1050 6700 1400
+$Comp
+L Connector:Conn_01x06_Female J2
+U 1 1 649A9AA4
+P 4650 1400
+F 0 "J2" H 4542 1785 50  0000 C CNN
+F 1 "COMBO_CONN" H 4542 1694 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S6B-XH-A_1x06_P2.50mm_Horizontal" H 4650 1400 50  0001 C CNN
+F 3 "~" H 4650 1400 50  0001 C CNN
+	1    4650 1400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1600 5450 1600
+Wire Wire Line
+	4850 1700 5450 1700
+Wire Wire Line
+	4800 4800 4800 4550
+Wire Wire Line
+	4800 3100 4800 2850
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 649C096D
+P 4800 2850
+F 0 "#FLG0103" H 4800 2925 50  0001 C CNN
+F 1 "PWR_FLAG" H 4800 3023 50  0000 C CNN
+F 2 "" H 4800 2850 50  0001 C CNN
+F 3 "~" H 4800 2850 50  0001 C CNN
+	1    4800 2850
+	0    1    1    0   
+$EndComp
+Connection ~ 4800 2850
+Wire Wire Line
+	4800 2850 4800 2600
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 649C1303
+P 4800 4550
+F 0 "#FLG0104" H 4800 4625 50  0001 C CNN
+F 1 "PWR_FLAG" H 4800 4723 50  0000 C CNN
+F 2 "" H 4800 4550 50  0001 C CNN
+F 3 "~" H 4800 4550 50  0001 C CNN
+	1    4800 4550
+	0    1    1    0   
+$EndComp
+Connection ~ 4800 4550
+Wire Wire Line
+	4800 4550 4800 4300
+NoConn ~ 5400 3900
+NoConn ~ 5400 3800
+NoConn ~ 5400 3500
+NoConn ~ 5400 3400
+NoConn ~ 3450 250 
+Connection ~ 6700 2750
+Wire Wire Line
+	6700 2750 6700 2900
+Connection ~ 6700 3350
+Wire Wire Line
+	6700 3350 6700 3200
+NoConn ~ 5400 3600
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU U1
+U 1 1 6493FA94
+P 4800 3700
+F 0 "U1" H 4271 3746 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 4271 3655 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4800 3700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 4800 3700 50  0001 C CNN
+	1    4800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3700 5650 3700
+$Comp
+L Simulation_SPICE:DIODE D1
+U 1 1 649553D0
+P 6700 3050
+F 0 "D1" V 6746 2970 50  0000 R CNN
+F 1 "DIODE" V 6655 2970 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 6700 3050 50  0001 C CNN
+F 3 "~" H 6700 3050 50  0001 C CNN
+F 4 "Y" H 6700 3050 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 6700 3050 50  0001 L CNN "Spice_Primitive"
+	1    6700 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 649EF6F6
+P 3800 2000
+F 0 "JP?" H 3800 2264 50  0000 C CNN
+F 1 "Jumper" H 3800 2173 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3800 2000 50  0001 C CNN
+F 3 "~" H 3800 2000 50  0001 C CNN
+	1    3800 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 2000 2    50   Input ~ 0
+TABLET_GND
+Text GLabel 3500 2000 0    50   Input ~ 0
+TABLET_SHIELD
+$EndSCHEMATC

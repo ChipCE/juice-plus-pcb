@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# TPS2115ADRBR
+#
+DEF TPS2115ADRBR U 0 40 Y Y 1 L N
+F0 "U" -500 539 50 H V L BNN
+F1 "TPS2115ADRBR" -500 -657 50 H V L BNN
+F2 "SON65P300X300X100-9N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Warning" 0 0 50 H I L BNN "AVAILABILITY"
+F5 "2.8-5.5-V, 84-m?, 1.25-A, power mux with manual, automatic switchover and status output 8-SON -40 to 85" 0 0 50 H I L BNN "DESCRIPTION"
+F6 "TPS2115ADRBR" 0 0 50 H I L BNN "MP"
+F7 "None" 0 0 50 H I L BNN "PRICE"
+F8 "https://snapeda.com/shop?store=Texas+Instruments&id=391793" 0 0 50 H I L BNN "TEXAS_INSTRUMENTS-PURCHASE-URL"
+F9 "Texas Instruments" 0 0 50 H I L BNN "MF"
+F10 "https://snapeda.com/shop?store=Mouser&id=391793" 0 0 50 H I L BNN "MOUSER-PURCHASE-URL"
+F11 "VSON-8 Texas Instruments" 0 0 50 H I L BNN "PACKAGE"
+DRAW
+S -500 -500 500 500 0 0 10 f
+X IN1 8 -700 400 200 R 40 40 0 0 I 
+X IN2 6 -700 300 200 R 40 40 0 0 I 
+X D0 2 -700 100 200 R 40 40 0 0 I 
+X D1 3 -700 0 200 R 40 40 0 0 I 
+X ILIM 4 -700 -200 200 R 40 40 0 0 I 
+X STAT 1 700 200 200 L 40 40 0 0 O 
+X OUT 7 700 400 200 L 40 40 0 0 O 
+X GND 5 700 -400 200 L 40 40 0 0 W 
+X EXP 9 700 -300 200 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library

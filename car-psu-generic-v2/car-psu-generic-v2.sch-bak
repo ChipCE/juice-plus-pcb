@@ -1,0 +1,46 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Car PSU Generic"
+Date "2023-04-19"
+Rev "2"
+Comp "SnakeOilDev"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L custom-symbols:buck-converter-akizuki-6A U?
+U 1 1 643FDEC9
+P 6850 3950
+F 0 "U?" H 6750 4525 50  0000 C CNN
+F 1 "buck-converter-akizuki-6A" H 6750 4434 50  0000 C CNN
+F 2 "custom-footprints:buck-converter-akizuki-6A" H 7250 3700 50  0001 C CNN
+F 3 "" H 7250 3700 50  0001 C CNN
+	1    6850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L mux:TPS2115ADRBR U?
+U 1 1 643FE244
+P 4150 3900
+F 0 "U?" H 4150 4567 50  0000 C CNN
+F 1 "TPS2115ADRBR" H 4150 4476 50  0000 C CNN
+F 2 "SON65P300X300X100-9N" H 4150 3900 50  0001 L BNN
+F 3 "" H 4150 3900 50  0001 L BNN
+F 4 "Warning" H 4150 3900 50  0001 L BNN "AVAILABILITY"
+F 5 "2.8-5.5-V, 84-m?, 1.25-A, power mux with manual, automatic switchover and status output 8-SON -40 to 85" H 4150 3900 50  0001 L BNN "DESCRIPTION"
+F 6 "TPS2115ADRBR" H 4150 3900 50  0001 L BNN "MP"
+F 7 "None" H 4150 3900 50  0001 L BNN "PRICE"
+F 8 "https://snapeda.com/shop?store=Texas+Instruments&id=391793" H 4150 3900 50  0001 L BNN "TEXAS_INSTRUMENTS-PURCHASE-URL"
+F 9 "Texas Instruments" H 4150 3900 50  0001 L BNN "MF"
+F 10 "https://snapeda.com/shop?store=Mouser&id=391793" H 4150 3900 50  0001 L BNN "MOUSER-PURCHASE-URL"
+F 11 "VSON-8 Texas Instruments" H 4150 3900 50  0001 L BNN "PACKAGE"
+	1    4150 3900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
