@@ -148,8 +148,6 @@ Wire Wire Line
 	6400 3700 6250 3700
 Wire Wire Line
 	6250 3700 6250 4000
-Wire Wire Line
-	6250 4450 6250 4300
 $Comp
 L Device:R_US R1
 U 1 1 6495FC82
@@ -266,7 +264,6 @@ $EndComp
 Connection ~ 4800 4550
 Wire Wire Line
 	4800 4550 4800 4300
-NoConn ~ 5400 3900
 NoConn ~ 5400 3800
 NoConn ~ 5400 3500
 NoConn ~ 5400 3400
@@ -319,4 +316,88 @@ Text GLabel 4100 2000 2    50   Input ~ 0
 TABLET_GND
 Text GLabel 3500 2000 0    50   Input ~ 0
 TABLET_SHIELD
+$Comp
+L custom-symbols:Switch S1
+U 1 1 64C59169
+P 4675 5600
+F 0 "S1" H 4675 5925 50  0000 C CNN
+F 1 "Switch" H 4675 5834 50  0000 C CNN
+F 2 "custom-footprints:switch-side-btn" H 4675 5600 50  0001 C CNN
+F 3 "" H 4675 5600 50  0001 C CNN
+	1    4675 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5525 4750 0    50   Input ~ 0
+GND
+Text GLabel 5525 4625 0    50   Input ~ 0
+VCC
+NoConn ~ 6100 4500
+NoConn ~ 6100 4750
+$Comp
+L custom-symbols:R3111-SOT235 U2
+U 1 1 64C79BCE
+P 5850 4625
+F 0 "U2" H 5812 4975 50  0000 C CNN
+F 1 "R3111-SOT235" H 5812 4884 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5850 4625 50  0001 C CNN
+F 3 "" H 5850 4625 50  0001 C CNN
+	1    5850 4625
+	1    0    0    -1  
+$EndComp
+Text GLabel 3825 5500 0    50   Input ~ 0
+TABLET_SHIELD
+Wire Wire Line
+	6250 4300 6250 4450
+Wire Wire Line
+	5525 4500 5525 3900
+Wire Wire Line
+	5525 3900 5400 3900
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 64CA18E4
+P 4025 5500
+F 0 "J4" H 4053 5526 50  0000 L CNN
+F 1 "bridge" H 4000 5650 50  0000 L CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical" H 4025 5500 50  0001 C CNN
+F 3 "~" H 4025 5500 50  0001 C CNN
+	1    4025 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 64CA42A2
+P 4300 5500
+F 0 "J5" H 4192 5275 50  0000 C CNN
+F 1 "bridge" H 4192 5366 50  0000 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical" H 4300 5500 50  0001 C CNN
+F 3 "~" H 4300 5500 50  0001 C CNN
+	1    4300 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 64CAE55E
+P 5050 5500
+F 0 "J6" H 5078 5526 50  0000 L CNN
+F 1 "bridge" H 5025 5650 50  0000 L CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical" H 5050 5500 50  0001 C CNN
+F 3 "~" H 5050 5500 50  0001 C CNN
+	1    5050 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J7
+U 1 1 64CAF139
+P 5275 5500
+F 0 "J7" H 5303 5526 50  0000 L CNN
+F 1 "bridge" H 5250 5650 50  0000 L CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x01_P1.27mm_Vertical" H 5275 5500 50  0001 C CNN
+F 3 "~" H 5275 5500 50  0001 C CNN
+	1    5275 5500
+	-1   0    0    1   
+$EndComp
+Text GLabel 5475 5500 2    50   Input ~ 0
+TABLET_GND
+NoConn ~ 4500 5675
+NoConn ~ 4850 5675
 $EndSCHEMATC

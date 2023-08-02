@@ -1,6 +1,23 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Connector_Conn_01x01_Female
+#
+DEF Connector_Conn_01x01_Female J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x01_Female" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*
+$ENDFPLIST
+DRAW
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+P 2 1 1 6 -50 0 -20 0 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Conn_01x04_Female
 #
 DEF Connector_Conn_01x04_Female J 0 40 Y N 1 F N
@@ -242,6 +259,43 @@ P 2 0 1 10 50 50 50 -50 N
 P 4 0 1 10 -50 -50 -50 50 50 0 -50 -50 N
 X A 1 -150 0 100 R 50 50 1 1 P
 X K 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# custom-symbols_R3111-SOT235
+#
+DEF custom-symbols_R3111-SOT235 U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "custom-symbols_R3111-SOT235" 25 350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -225 175 150 -175 0 1 0 N
+X OUT 1 -325 125 100 R 50 50 1 1 P
+X VCC 2 -325 0 100 R 50 50 1 1 P
+X GND 3 -325 -125 100 R 50 50 1 1 P
+X NC 4 250 125 100 L 50 50 1 1 P
+X NC 5 250 -125 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# custom-symbols_Switch
+#
+DEF custom-symbols_Switch S 0 40 Y Y 1 F N
+F0 "S" 0 0 50 H V C CNN
+F1 "custom-symbols_Switch" 0 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -50 100 25 0 1 0 N
+C 50 100 25 0 1 0 N
+P 2 0 1 0 -75 -75 75 -75 N
+P 2 0 1 0 -75 150 75 150 N
+P 2 0 1 0 0 100 0 150 N
+X ~ 1 -175 100 100 R 50 50 1 1 P
+X ~ 2 175 100 100 L 50 50 1 1 P
+X ~ 3 -175 -75 100 R 50 50 1 1 P
+X ~ 4 175 -75 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
