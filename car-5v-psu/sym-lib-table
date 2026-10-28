@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "microfit-2p")(type "KiCad")(uri "${KIPRJMOD}/REF/microfit-2p/436500201.kicad_sym")(options "")(descr ""))
+  (lib (name "microfit-2p-vertical")(type "KiCad")(uri "${KIPRJMOD}/REF/microfit-2p-vertical/430450200.kicad_sym")(options "")(descr ""))
+  (lib (name "microfit-3p")(type "KiCad")(uri "${KIPRJMOD}/REF/microfit-3p/436500301.kicad_sym")(options "")(descr ""))
+  (lib (name "microfit-4p")(type "KiCad")(uri "${KIPRJMOD}/REF/microfit-4p/436500400.kicad_sym")(options "")(descr ""))
+  (lib (name "usb-a")(type "KiCad")(uri "${KIPRJMOD}/REF/usb-a/2026-03-02_13-37-39.kicad_sym")(options "")(descr ""))
+)
